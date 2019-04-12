@@ -4,11 +4,11 @@
 	<parent>
 		<groupId>guru.springframework</groupId>
 		<artifactId>sfg-pet-clinic</artifactId>
-		<version>0.0.2-SNAPSHOT</version>
+		<version>0.0.2</version>
 	</parent>
 	<groupId>guru.springframework</groupId>
 	<artifactId>pet-clinic-data</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>pet-clinic-data</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
