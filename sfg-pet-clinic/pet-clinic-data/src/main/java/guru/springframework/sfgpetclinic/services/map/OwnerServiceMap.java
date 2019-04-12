@@ -8,7 +8,8 @@ import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.services.OwnerService;
 
 @Service
-public class OwnerServiceMap extends AbstractMapSerivce<Owner, Long> implements OwnerService {
+public class OwnerServiceMap extends AbstractMapSerivce<Owner, Long> 
+implements OwnerService {
 
 	@Override
 	public Set<Owner> findAll() {
@@ -21,8 +22,8 @@ public class OwnerServiceMap extends AbstractMapSerivce<Owner, Long> implements 
 	}
 
 	@Override
-	public Owner save(Long id, Owner object) {
-		return super.save(id, object);
+	public Owner save(Owner object) {
+		return super.save(object);
 	}
 
 	@Override
@@ -46,9 +47,5 @@ public class OwnerServiceMap extends AbstractMapSerivce<Owner, Long> implements 
 		return null;
 	}
 
-	@Override
-	public Owner save(Owner object) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }
