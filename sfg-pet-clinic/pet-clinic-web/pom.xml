@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>guru.springframework</groupId>
 		<artifactId>sfg-pet-clinic</artifactId>
-		<version>0.0.3-SNAPSHOT</version>
+		<version>0.0.3</version>
 	</parent>
 	
 	<groupId>guru.springframework</groupId>
 	<artifactId>pet-clinic-web</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 	
 	<name>pet-clinic-web</name>
 	
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>guru.springframework</groupId>
 			<artifactId>pet-clinic-data</artifactId>
-			<version>0.0.3-SNAPSHOT</version>
+			<version>0.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
