@@ -41,11 +41,6 @@ implements OwnerService {
 		return null;
 	}
 
-	@Override
-	public Owner findById() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 }

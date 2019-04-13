@@ -36,8 +36,4 @@ public class VetServiceMap extends AbstractMapSerivce<Vet, Long>
 		super.delete(object);
 	}
 
-	@Override
-	public Vet findById() {
-		return null;
-	}
 }
