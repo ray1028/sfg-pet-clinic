@@ -11,7 +11,6 @@ import guru.springframework.sfgpetclinic.repositories.SpecialityRepository;
 import guru.springframework.sfgpetclinic.services.SpecialityService;
 
 
-
 @Service
 @Profile("springdatajpa")
 public class SpecialitySDJpaService implements SpecialityService{
