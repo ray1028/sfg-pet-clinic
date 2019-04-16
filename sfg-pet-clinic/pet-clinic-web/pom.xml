@@ -23,7 +23,7 @@
 		<webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
 		<webjars-jquery.version>2.2.4</webjars-jquery.version>
 		<wro4j.version>1.8.0</wro4j.version>
-		
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -75,6 +75,15 @@
 			<artifactId>bootstrap</artifactId>
 			<version>${webjars-bootstrap.version}</version>
 		</dependency>
+
+		<!-- Lombok -->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 		<!-- end of webjars -->
 
 		<dependency>
@@ -90,14 +99,14 @@
 				<groupId>ro.isdc.wro4j</groupId>
 				<artifactId>wro4j-maven-plugin</artifactId>
 				<version>${wro4j.version}</version>
- 				<executions>
+				<executions>
 					<execution>
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>
 					</execution>
-				</executions> 
+				</executions>
 				<configuration>
 					<wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
 					<cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
