@@ -17,9 +17,9 @@ import lombok.Setter;
 
 @Setter
 @Getter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(name="owners")
 public class Owner extends Person {

@@ -121,9 +121,8 @@ public class DataLoader implements CommandLineRunner {
 		vet2.setFirstName("Jessie");
 		vet2.setLastName("Porter");
 		vet2.getSpecialities().add(savedSurgery);
-
-		vetService.save(vet2);
-
+		
+		
 		System.out.println("Loaded Vets...");
 		System.out.println("(*)*)*)*)*)*)*)*)*)");
 		System.out.println("Owner =  " + ownerService.findAll().size() + "\nVet =  " + vetService.findAll().size());
