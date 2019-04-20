@@ -1,6 +1,5 @@
 package guru.springframework.sfgpetclinic.controllers;
 
-import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -13,6 +12,7 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -62,6 +62,18 @@ class OwnerControllerTest {
 				.andExpect(view().name("owners/index"));
 //				.andExpect(model().attribute("owners", hasSize(2));
 	}
+	
+	@Test
+	void listOwnersByIndex() throws Exception{
+		when(ownerService.findAll()).thenReturn(owners);
+		
+		mockMvc.perform(get("/owners/index"))
+		 	.andExpect(status().isOk())
+		 	.andExpect(view().name("owners/index"));
+//		 	.andExpect(model().attribute("owners", hasSize(2)));
+		
+		
+	}
 
 
 	@Test
@@ -71,5 +83,23 @@ class OwnerControllerTest {
 		.andExpect(view().name("notimplemented"));
 		
 	}
+//	
+//	@Test
+//	void displayOwner() throws Exception{
+//		
+//		Owner owner = new Owner();
+//		owner.setId(1l);
+//		
+//		when(ownerService.findById(anyLong())).thenReturn(owner);
+//		
+//		
+//		mockMvc.perform(get("/owners/index"))
+//		 	.andExpect(status().isOk())
+//		 	.andExpect(view().name("owners/ownerDetails"))
+//		 	.andExpect(model().attribute("owner", hasProperty(id, is(1L))));
+//		
+//		
+//	}
+	
 
 }
